@@ -62,6 +62,17 @@ password_entry.grid(row=2, column=2)
 password_entry.insert(0, "e.g. 123456")
 password_entry.bind("<FocusIn>", lambda event: clear_entry(event, password_entry))
 
+form_bottom = Frame(window, height=44, width=335,bg="#18206F")
+form_bottom.place(x=65+188, y=350)
+
+form_button = Button(form_bottom, text="Submit", fg="#000000", bg="#FFD600", font=("Lato", 20))
+form_button.grid(row=0, column=0, sticky='w')
+
+form_spacer3 = Label(form_bottom, bg="#18206F", width=3)
+form_spacer3.grid(row=0, column=1)
+
+form_checkbox = Checkbutton(form_bottom, text="Remember password:", font=("Lato", 14))
+form_checkbox.grid(row=0, column=2, sticky='e')
 
 # Main loop
 window.mainloop()
