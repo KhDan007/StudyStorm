@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
 
 
-<AnchorPane prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
-
+<AnchorPane prefHeight="600.0" prefWidth="850.0" style="-fx-background-color: #18206F;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#17255a" height="600.0" layoutY="1.0" stroke="#17255a" strokeType="INSIDE" strokeWidth="0.0" width="188.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#17255a" height="600.0" layoutX="662.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="188.0" />
+   </children>
 </AnchorPane>
