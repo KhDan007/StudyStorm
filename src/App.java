@@ -11,6 +11,8 @@ public class App extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("LoginScene.fxml")));
         Scene scene = new Scene(root);
+        String css = Objects.requireNonNull(this.getClass().getResource("app.css")).toExternalForm();
+        scene.getStylesheets().add(css);
 
         stage.setTitle("StudyStorm");
         stage.setScene(scene);
